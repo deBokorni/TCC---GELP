@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GELP - Gerenciador de Estoque Leandro e Pedro</title>
+    <meta name="description" content="Sistema de gerenciamento de estoque simples e direto para pequenos comércios">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">GELP</h1>
+            <p class="subtitle">Seu Gerenciador de Estoque</p>
+            <nav class="nav">
+                <button class="nav-btn active" data-section="dashboard">Dashboard</button>
+                <button class="nav-btn" data-section="produtos">Produtos</button>
+                <button class="nav-btn" data-section="estoque">Estoque</button>
+                <button class="nav-btn" data-section="vendas">Vendas</button>
+                <button class="nav-btn" data-section="clientes">Clientes</button>
+                <button class="nav-btn" data-section="fornecedores">Fornecedores</button>
+                <button class="nav-btn" data-section="categorias">Categorias</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <!-- Dashboard Section -->
+            <section id="dashboard-section" class="section active">
+                <h2>Dashboard</h2>
+                <div class="dashboard-cards">
+                    <div class="card">
+                        <h3>Total de Produtos</h3>
+                        <p class="card-number" id="total-produtos">0</p>
+                    </div>
+                    <div class="card">
+                        <h3>Produtos em Estoque</h3>
+                        <p class="card-number" id="produtos-estoque">0</p>
+                    </div>
+                    <div class="card">
+                        <h3>Vendas Hoje</h3>
+                        <p class="card-number" id="vendas-hoje">0</p>
+                    </div>
+                    <div class="card">
+                        <h3>Total de Clientes</h3>
+                        <p class="card-number" id="total-clientes">0</p>
+                    </div>
+                </div>
+                
+                <!-- Placeholder para anúncio não invasivo -->
+                <div class="ad-placeholder">
+                    <p>Espaço para anúncio</p>
+                </div>
+            </section>
+
+            <!-- Produtos Section -->
+            <section id="produtos-section" class="section">
+                <div class="section-header">
+                    <h2>Produtos</h2>
+                    <button class="btn btn-primary" id="add-produto-btn">Adicionar Produto</button>
+                </div>
+                
+                <div class="table-container">
+                    <table class="data-table" id="produtos-table">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Categoria</th>
+                                <th>Preço</th>
+                                <th>Status</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Dados serão inseridos via JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Estoque Section -->
+            <section id="estoque-section" class="section">
+                <div class="section-header">
+                    <h2>Estoque</h2>
+                    <button class="btn btn-primary" id="add-entrada-btn">Nova Entrada</button>
+                </div>
+                
+                <div class="table-container">
+                    <table class="data-table" id="estoque-table">
+                        <thead>
+                            <tr>
+                                <th>Produto</th>
+                                <th>Quantidade</th>
+                                <th>Última Atualização</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Dados serão inseridos via JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Vendas Section -->
+            <section id="vendas-section" class="section">
+                <div class="section-header">
+                    <h2>Vendas</h2>
+                    <button class="btn btn-primary" id="add-venda-btn">Nova Venda</button>
+                </div>
+                
+                <div class="table-container">
+                    <table class="data-table" id="vendas-table">
+                        <thead>
+                            <tr>
+                                <th>Data</th>
+                                <th>Cliente</th>
+                                <th>Valor Total</th>
+                                <th>Status</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Dados serão inseridos via JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Clientes Section -->
+            <section id="clientes-section" class="section">
+                <div class="section-header">
+                    <h2>Clientes</h2>
+                    <button class="btn btn-primary" id="add-cliente-btn">Adicionar Cliente</button>
+                </div>
+                
+                <div class="table-container">
+                    <table class="data-table" id="clientes-table">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>CPF</th>
+                                <th>Email</th>
+                                <th>Telefone</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Dados serão inseridos via JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Fornecedores Section -->
+            <section id="fornecedores-section" class="section">
+                <div class="section-header">
+                    <h2>Fornecedores</h2>
+                    <button class="btn btn-primary" id="add-fornecedor-btn">Adicionar Fornecedor</button>
+                </div>
+                
+                <div class="table-container">
+                    <table class="data-table" id="fornecedores-table">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Contato</th>
+                                <th>Telefone</th>
+                                <th>Email</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Dados serão inseridos via JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Categorias Section -->
+            <section id="categorias-section" class="section">
+                <div class="section-header">
+                    <h2>Categorias</h2>
+                    <button class="btn btn-primary" id="add-categoria-btn">Adicionar Categoria</button>
+                </div>
+                
+                <div class="table-container">
+                    <table class="data-table" id="categorias-table">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Descrição</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Dados serão inseridos via JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Modal para formulários -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-body">
+                <!-- Conteúdo do modal será inserido via JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 GELP - Gerenciador de Estoque Leandro e Pedro</p>
+                
+                <!-- Placeholder para anúncio não invasivo -->
+                <div class="ad-placeholder-footer">
+                    <p>Anúncio</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/models.js"></script>
+    <script src="js/db.js"></script>
+    <script src="js/main.js"></script>
+    @import
+</body>
+</html>
+
