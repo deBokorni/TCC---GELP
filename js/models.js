@@ -1,4 +1,4 @@
-// Modelos de dados para o GELP
+
 // Representam as entidades do banco de dados como classes JavaScript
 
 class Cliente {

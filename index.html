@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +10,17 @@
     <meta name="description" content="Sistema de gerenciamento de estoque simples e direto para pequenos comércios">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
+
+
 <body>
+
     <header class="header">
         <div class="container">
             <h1 class="logo">GELP</h1>
-            <p class="subtitle">Seu Gerenciador de Estoque</p>
+            <p class="subtitle">Gerenciador de Estoque Leandro e Pedro</p>
             <nav class="nav">
-                <button class="nav-btn active" data-section="dashboard">Dashboard</button>
+                <button class="nav-btn active" data-section="dashboard">Painel Principal</button>
                 <button class="nav-btn" data-section="produtos">Produtos</button>
                 <button class="nav-btn" data-section="estoque">Estoque</button>
                 <button class="nav-btn" data-section="vendas">Vendas</button>
@@ -24,11 +31,15 @@
         </div>
     </header>
 
+
     <main class="main">
         <div class="container">
-            <!-- Dashboard Section -->
+
+            <!--Painel principal-->
             <section id="dashboard-section" class="section active">
-                <h2>Dashboard</h2>
+
+                <h2>Painel Principal</h2>
+
                 <div class="dashboard-cards">
                     <div class="card">
                         <h3>Total de Produtos</h3>
@@ -48,14 +59,15 @@
                     </div>
                 </div>
                 
-                <!-- Placeholder para anúncio não invasivo -->
+                <!--Espaço para anúncio-->
                 <div class="ad-placeholder">
                     <p>Espaço para anúncio</p>
                 </div>
             </section>
 
-            <!-- Produtos Section -->
+            <!--Produtos-->
             <section id="produtos-section" class="section">
+
                 <div class="section-header">
                     <h2>Produtos</h2>
                     <button class="btn btn-primary" id="add-produto-btn">Adicionar Produto</button>
@@ -79,7 +91,7 @@
                 </div>
             </section>
 
-            <!-- Estoque Section -->
+            <!--Estoque-->
             <section id="estoque-section" class="section">
                 <div class="section-header">
                     <h2>Estoque</h2>
@@ -103,7 +115,7 @@
                 </div>
             </section>
 
-            <!-- Vendas Section -->
+            <!--Vendas-->
             <section id="vendas-section" class="section">
                 <div class="section-header">
                     <h2>Vendas</h2>
@@ -128,7 +140,7 @@
                 </div>
             </section>
 
-            <!-- Clientes Section -->
+            <!--Clientes -->
             <section id="clientes-section" class="section">
                 <div class="section-header">
                     <h2>Clientes</h2>
@@ -153,7 +165,7 @@
                 </div>
             </section>
 
-            <!-- Fornecedores Section -->
+            <!--Fornecedores-->
             <section id="fornecedores-section" class="section">
                 <div class="section-header">
                     <h2>Fornecedores</h2>
@@ -178,7 +190,7 @@
                 </div>
             </section>
 
-            <!-- Categorias Section -->
+            <!--Categorias-->
             <section id="categorias-section" class="section">
                 <div class="section-header">
                     <h2>Categorias</h2>
@@ -203,7 +215,7 @@
         </div>
     </main>
 
-    <!-- Modal para formulários -->
+    <!--Modal para formulários-->
     <div id="modal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
@@ -218,7 +230,7 @@
             <div class="footer-content">
                 <p>&copy; 2025 GELP - Gerenciador de Estoque Leandro e Pedro</p>
                 
-                <!-- Placeholder para anúncio não invasivo -->
+                <!--Espaço para anúncio-->
                 <div class="ad-placeholder-footer">
                     <p>Anúncio</p>
                 </div>
@@ -229,7 +241,6 @@
     <script src="js/models.js"></script>
     <script src="js/db.js"></script>
     <script src="js/main.js"></script>
-    @import
 </body>
 </html>
 
