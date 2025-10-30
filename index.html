@@ -1,17 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GELP - Gerenciador de Estoque Leandro e Pedro</title>
-    <meta name="description" content="Sistema de gerenciamento de estoque simples e direto para pequenos comércios">
+    <meta name="description" content="Sistema de gerenciamento de estoque simples e direto para pequenos comércios.">
     <link rel="stylesheet" href="css/style.css">
 </head>
-
-
 
 <body>
 
@@ -19,26 +14,25 @@
         <div class="container">
             <h1 class="logo">GELP</h1>
             <p class="subtitle">Gerenciador de Estoque Leandro e Pedro</p>
-            <nav class="nav">
-                <button class="nav-btn active" data-section="dashboard">Painel Principal</button>
-                <button class="nav-btn" data-section="produtos">Produtos</button>
-                <button class="nav-btn" data-section="estoque">Estoque</button>
-                <button class="nav-btn" data-section="vendas">Vendas</button>
-                <button class="nav-btn" data-section="clientes">Clientes</button>
-                <button class="nav-btn" data-section="fornecedores">Fornecedores</button>
-                <button class="nav-btn" data-section="categorias">Categorias</button>
+
+            <nav class="nav" aria-label="Navegação principal">
+                <button class="nav-btn active" data-section="dashboard" aria-label="Painel Principal">Painel Principal</button>
+                <button class="nav-btn" data-section="produtos" aria-label="Gerenciar Produtos">Produtos</button>
+                <button class="nav-btn" data-section="estoque" aria-label="Controle de Estoque">Estoque</button>
+                <button class="nav-btn" data-section="vendas" aria-label="Gerenciar Vendas">Vendas</button>
+                <button class="nav-btn" data-section="clientes" aria-label="Gerenciar Clientes">Clientes</button>
+                <button class="nav-btn" data-section="fornecedores" aria-label="Gerenciar Fornecedores">Fornecedores</button>
+                <button class="nav-btn" data-section="categorias" aria-label="Gerenciar Categorias">Categorias</button>
             </nav>
         </div>
     </header>
 
-
     <main class="main">
         <div class="container">
 
-            <!--Painel principal-->
-            <section id="dashboard-section" class="section active">
-
-                <h2>Painel Principal</h2>
+            <!-- Painel Principal -->
+            <section id="dashboard-section" class="section active" aria-labelledby="dashboard-title">
+                <h2 id="dashboard-title">Painel Principal</h2>
 
                 <div class="dashboard-cards">
                     <div class="card">
@@ -58,21 +52,19 @@
                         <p class="card-number" id="total-clientes">0</p>
                     </div>
                 </div>
-                
-                <!--Espaço para anúncio-->
-                <div class="ad-placeholder">
+
+                <div class="ad-placeholder" aria-label="Espaço para anúncio">
                     <p>Espaço para anúncio</p>
                 </div>
             </section>
 
-            <!--Produtos-->
+            <!-- Seções de gestão -->
             <section id="produtos-section" class="section">
-
                 <div class="section-header">
                     <h2>Produtos</h2>
-                    <button class="btn btn-primary" id="add-produto-btn">Adicionar Produto</button>
+                    <button class="btn btn-primary" id="add-produto-btn" aria-label="Adicionar novo produto">Adicionar Produto</button>
                 </div>
-                
+
                 <div class="table-container">
                     <table class="data-table" id="produtos-table">
                         <thead>
@@ -84,20 +76,17 @@
                                 <th>Ações</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <!-- Dados serão inseridos via JavaScript -->
-                        </tbody>
+                        <tbody></tbody>
                     </table>
                 </div>
             </section>
 
-            <!--Estoque-->
             <section id="estoque-section" class="section">
                 <div class="section-header">
                     <h2>Estoque</h2>
                     <button class="btn btn-primary" id="add-entrada-btn">Nova Entrada</button>
                 </div>
-                
+
                 <div class="table-container">
                     <table class="data-table" id="estoque-table">
                         <thead>
@@ -108,20 +97,17 @@
                                 <th>Ações</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <!-- Dados serão inseridos via JavaScript -->
-                        </tbody>
+                        <tbody></tbody>
                     </table>
                 </div>
             </section>
 
-            <!--Vendas-->
             <section id="vendas-section" class="section">
                 <div class="section-header">
                     <h2>Vendas</h2>
                     <button class="btn btn-primary" id="add-venda-btn">Nova Venda</button>
                 </div>
-                
+
                 <div class="table-container">
                     <table class="data-table" id="vendas-table">
                         <thead>
@@ -133,20 +119,17 @@
                                 <th>Ações</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <!-- Dados serão inseridos via JavaScript -->
-                        </tbody>
+                        <tbody></tbody>
                     </table>
                 </div>
             </section>
 
-            <!--Clientes -->
             <section id="clientes-section" class="section">
                 <div class="section-header">
                     <h2>Clientes</h2>
                     <button class="btn btn-primary" id="add-cliente-btn">Adicionar Cliente</button>
                 </div>
-                
+
                 <div class="table-container">
                     <table class="data-table" id="clientes-table">
                         <thead>
@@ -158,20 +141,17 @@
                                 <th>Ações</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <!-- Dados serão inseridos via JavaScript -->
-                        </tbody>
+                        <tbody></tbody>
                     </table>
                 </div>
             </section>
 
-            <!--Fornecedores-->
             <section id="fornecedores-section" class="section">
                 <div class="section-header">
                     <h2>Fornecedores</h2>
                     <button class="btn btn-primary" id="add-fornecedor-btn">Adicionar Fornecedor</button>
                 </div>
-                
+
                 <div class="table-container">
                     <table class="data-table" id="fornecedores-table">
                         <thead>
@@ -183,20 +163,17 @@
                                 <th>Ações</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <!-- Dados serão inseridos via JavaScript -->
-                        </tbody>
+                        <tbody></tbody>
                     </table>
                 </div>
             </section>
 
-            <!--Categorias-->
             <section id="categorias-section" class="section">
                 <div class="section-header">
                     <h2>Categorias</h2>
                     <button class="btn btn-primary" id="add-categoria-btn">Adicionar Categoria</button>
                 </div>
-                
+
                 <div class="table-container">
                     <table class="data-table" id="categorias-table">
                         <thead>
@@ -206,22 +183,18 @@
                                 <th>Ações</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <!-- Dados serão inseridos via JavaScript -->
-                        </tbody>
+                        <tbody></tbody>
                     </table>
                 </div>
             </section>
         </div>
     </main>
 
-    <!--Modal para formulários-->
-    <div id="modal" class="modal">
+    <!-- Modal -->
+    <div id="modal" class="modal" role="dialog" aria-modal="true" aria-label="Formulário de cadastro ou edição">
         <div class="modal-content">
-            <span class="close">&times;</span>
-            <div id="modal-body">
-                <!-- Conteúdo do modal será inserido via JavaScript -->
-            </div>
+            <button class="close" aria-label="Fechar modal">&times;</button>
+            <div id="modal-body"></div>
         </div>
     </div>
 
@@ -229,18 +202,13 @@
         <div class="container">
             <div class="footer-content">
                 <p>&copy; 2025 GELP - Gerenciador de Estoque Leandro e Pedro</p>
-                
-                <!--Espaço para anúncio-->
-                <div class="ad-placeholder-footer">
+                <div class="ad-placeholder-footer" aria-label="Anúncio no rodapé">
                     <p>Anúncio</p>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script src="js/models.js"></script>
-    <script src="js/db.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
-
