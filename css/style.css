@@ -240,3 +240,71 @@ body {
         justify-content: center;
     }
 }
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+    
+}
+
+.table-container th, .table-container td {
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+}
+
+.table th, .table td {
+    border: 1px solid var(--border-color);
+    padding: 0.75rem 1rem;
+    text-align: left;
+}
+
+.table th {
+    background-color: var(--background-color);
+    color: var(--text-secondary);
+    font-weight: 600;
+}
+
+.table tr:nth-child(even) {
+    background-color: var(--background-color);
+}
+
+.table tr:hover {
+    background-color: var(--primary-hover);
+    color: #fff;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.table-responsive .table {
+    min-width: 600px;
+}
+
+/* Formulários */
+.form-group {
+    margin-bottom: 1.5rem;
+}   
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}   
+
