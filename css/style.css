@@ -308,3 +308,58 @@ body {
     transition: border-color 0.2s;
 }   
 
+/* =============================================== */
+/*          ESTILOS DA TABELA DE DADOS             */
+/* =============================================== */
+
+/* Garante que a tabela ocupe todo o espaço do container */
+.data-table {
+    width: 100%;
+    border-collapse: collapse; /* Mantém as bordas unidas para um visual limpo */
+    margin-top: 20px;
+}
+
+/* Estilo para os cabeçalhos (th) */
+.data-table th {
+    background-color: #f2f2f2; /* Um cinza claro para destacar o cabeçalho */
+    color: #333;
+    font-weight: 600; /* Deixa o texto do cabeçalho mais forte */
+    padding: 12px 15px; /* Espaçamento interno para conforto visual */
+    text-align: left; /* Alinha o texto à esquerda */
+    
+    /* A SOLUÇÃO: Adiciona uma borda à direita de cada cabeçalho */
+    border-right: 1px solid #ddd; 
+    border-bottom: 2px solid #ccc; /* Uma borda inferior mais forte para separar do corpo */
+}
+
+/* Remove a borda do último cabeçalho para não sobrar um traço no final */
+.data-table th:last-child {
+    border-right: none;
+}
+
+/* Estilo para as células do corpo da tabela (td) */
+.data-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee; /* Linhas finas separando os registros */
+    color: #555;
+}
+
+/* Efeito de hover nas linhas para melhor usabilidade */
+.data-table tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Estilo para os botões de ações dentro da tabela */
+.data-table .btn-action {
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.data-table .btn-action:hover {
+    background-color: #e9e9e9;
+    border-color: #999;
+}
