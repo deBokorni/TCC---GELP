@@ -1,8 +1,8 @@
-# GELP - Gerenciador de Estoque Leandro e Pedro
+# GELPK - Gerenciador de Estoque Leandro, Pedro e Kaio
 
 ## Descrição
 
-O GELP é um sistema web de gerenciamento de estoque moderno, leve e direto, desenvolvido especificamente para pequenos comércios como padarias, mercearias, disks, minimercados e empreendedores iniciantes. O sistema utiliza tecnologias web puras (HTML, CSS e JavaScript) e armazena todos os dados localmente no navegador do usuário através do IndexedDB.
+O GELPK é um sistema web de gerenciamento de estoque moderno, leve e direto, desenvolvido especificamente para pequenos comércios como padarias, mercearias, disks, minimercados e empreendedores iniciantes. O sistema utiliza tecnologias web puras (HTML, CSS e JavaScript) e armazena todos os dados localmente no navegador do usuário através do IndexedDB.
 
 ## Características Principais
 
@@ -79,28 +79,6 @@ gelp-frontend/
 - Firefox 55+
 - Safari 10+
 - Edge 79+
-
-## Dados de Exemplo
-
-Na primeira execução, o sistema carrega automaticamente dados de exemplo:
-
-### Categorias
-- Frutas
-- Laticínios
-- Padaria
-
-### Produtos
-- Maçã Gala (R$ 5,50)
-- Leite Integral 1L (R$ 4,20)
-- Pão Francês (R$ 0,80)
-
-### Clientes
-- Ana Paula
-- Bruno Costa
-
-### Fornecedores
-- Fazenda Verde
-- Laticínios Bom Leite
 
 ## Armazenamento de Dados
 
